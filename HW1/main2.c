@@ -1,20 +1,18 @@
 int main() {
-    char input[]="AAABBBBCCCCDD", output[100];
-    int count = 1;
+    char a[]="A2B3C4D2", original[100];
     int len = 0;
-    while (input[len] != '\0') {
+    while (a[len] != '\0') {
         len++;
     }
     int j = 0;
-    for (int i = 0; i < len; i++) {
-        if (input[i] == input[i+1]) {
-            count++;
-        } else {
-            output[j++] = input[i];
-            output[j++] = count + '0';
-            count = 1;
+    for (int i = 0; i < len; i += 2) {
+        char c = a[i];
+        int count = a[i+1] - '0'; 
+        for (int k = 0; k < count; k++) {
+            original[j++] = c;
         }
     }
-    output[j] = '\0';
-    printf("%s\n", output);
+    original[j] = '\0';
+    printf("%s\n", original);
     return 0;
+}
