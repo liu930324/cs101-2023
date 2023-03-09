@@ -4,7 +4,7 @@ int main()
 {
     FILE* fp;
     int arr_write[5] = {1,2,3,4,5};
-    int arr_read[5]
+    int arr_read[5];
     if((fp=fopen("a.bin","wb+"))==NULL){
         printf("Cannot open the file...");
         exit(1);
