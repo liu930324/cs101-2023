@@ -1,1 +1,5 @@
-
+person_t p[5] = {1, "IU", "Lee"};
+                {2, "IUU", "Lee"};
+                {3, "IUUU", "Lee"};
+                {4, "IUUUU", "Lee"};
+                {5, "IUUUUU", "Lee"};
