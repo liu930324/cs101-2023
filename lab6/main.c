@@ -13,7 +13,7 @@ int multi_2(int i,int j){
         printf("\n");
         return 0;
     }else{
-    multi_2(i,j);
+    multi_2(i+1,j);
     multi(i,j);
     printf("\n");
     }
