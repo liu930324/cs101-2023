@@ -8,18 +8,18 @@ int multi(int i, int j){
     }
 }
 int multi_2(int i,int j){
-    if(i==j){
+    if(i==1){
         multi(i,j);
         printf("\n");
         return 0;
     }else{
-    multi_2(i+1,j);
+    multi_2(i-1,j);
     multi(i,j);
     printf("\n");
     }
 }
 int main()
 {
-    multi_2(1,9);
+    multi_2(9,9);
     return 0;
 }
